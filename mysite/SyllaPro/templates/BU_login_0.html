@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 {% load static %}
-<link rel="stylesheet" href="{% static 'login.css' %}">
+<link rel="stylesheet" href="{% static 'login_style.css' %}">
 <HTML>
  <HEAD>
   <TITLE> 백석대학교 수강신청 로그인 </TITLE>
@@ -53,7 +53,6 @@
  <BODY bgcolor="#FEFEFE">
  <form name="loginform" method="post">
 	  {% csrf_token %}
-	 <img src="{% static 'BU_logo.png' %}" alt="" width = 300px height = 300px>
   <table align="center" height="20">
 	<tr>
 		<td><div id="main-title">백석대학교 수강신청<div></td>
