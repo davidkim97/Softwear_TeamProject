@@ -1,0 +1,21 @@
+table,
+tr,
+td {
+  border: 1px solid #c2c2c2;
+  padding: 10px;
+}
+
+.class_table {
+  width: 60%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.class_table tr {
+  text-align: center;
+}
+
+td:nth-child(1) {
+  width: 75px;
+  padding: 20px;
+}

@@ -1,0 +1,89 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+{% load static %}
+<link rel="stylesheet" href="{% static 'login.css' %}">
+<HTML>
+ <HEAD>
+  <TITLE> 백석대학교 수강신청 로그인 </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+
+
+
+
+  <style>
+
+  #main-title {
+  color:#0B82F8;
+  font-size:15pt;
+  margin-top:20%;
+  }
+
+	  .se {font-family: serif;}
+      .sa {font-family: sans-serif;}
+      .cu {font-family: cursive;}
+      .fa {font-family: fantasy;}
+      .mo {font-family: monospace;}
+
+
+  </style>
+  <script>
+
+  function enter(){
+
+	var frm=document.loginform;
+
+	if(frm.id.value.length<3){
+		alert("아이디를 올바르게 입력해주세요");
+		return;
+	}
+
+
+	frm.method="get";
+	frm.action="index"; //넘어간화면
+	frm.submit(); //등록이 될수 있는 조건이면, 정보를 보내겠다.
+	}
+</script>
+
+
+ </HEAD>
+ 
+
+ <BODY bgcolor="#FEFEFE">
+ <form name="loginform" method="post">
+	  {% csrf_token %}
+	 <img src="{% static 'BU_logo.png' %}" alt="" width = 300px height = 300px>
+  <table align="center" height="20">
+	<tr>
+		<td><div id="main-title">백석대학교 수강신청<div></td>
+	</tr>
+  </table>
+
+	<table align="center" height="20" width="215" border="0" style="border:solid 4px #0B82F8; margin-top:2%">
+		<tr>
+			<td><input type="text" name="id" value="" placeholder="아이디" style="height:20px; width:215px;"></td>
+		</tr>
+		</table>
+	<table align="center" height="20" width="215" border="0" style="border:solid 4px #0B82F8; margin-top:1%">
+		<tr>
+			<td><input type="password" name="pw" value=""  placeholder="비밀번호" style="height:20px; width:215px"></td>
+		</tr>
+	</table>
+
+	<table align="center" height="20" style="margin-top:1%">
+	<tr>
+		<td><input type="button" name="login" value="로그인" style="height:25px; width:215px;  background-color:#0B82F8; color:white; font-size:10px; border:solid 1px #050099; " onClick="enter()"></td>
+	</tr>
+	</table>
+
+	<table align="center" height="0" width="220" border="1" style="border:solid 1px #0B82F8; margin-top:2%">
+	</table>
+
+	<table align="center" height="25" style="margin-top:1%" class="mo">
+		
+		
+	</table>
+   </form>
+ </BODY>
+</HTML>
