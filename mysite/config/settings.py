@@ -129,3 +129,5 @@ STATICFILES_DIRS = [
 AUTH_USER_MODEL = 'SyllaPro.User'
 
 
+
+

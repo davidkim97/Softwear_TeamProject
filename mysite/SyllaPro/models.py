@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
@@ -27,4 +28,5 @@ class Subject_basket(models.Model):
     subject_ID = models.CharField(max_length=50)
     Basket_Code = models.IntegerField()
     processing_result = models.BooleanField(default=False)
+
 

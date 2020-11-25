@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/david/Desktop/jango/mysite/db.sqlite3" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="125"/><column_width id="3" width="3495"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,16:mainSyllaPro_subject"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="SyllaPro_login_log" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="96"/><column index="2" value="80"/><column index="3" value="27"/><column index="4" value="89"/><column index="5" value="77"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="SyllaPro_subject" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="122"/><column index="3" value="144"/><column index="4" value="98"/><column index="5" value="66"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">INSERT INTO SyllaPro_subject VALUES ('138101', '소프트웨어공학', '이승화', '월6,7,8', 3);
+INSERT INTO SyllaPro_subject VALUES ('320001', '인공지능', '홍경호', '월1,2,3', 3);
+INSERT INTO SyllaPro_subject VALUES ('880501', '블록체인DApp프로그래밍', '윤성현', '화6,7,8,9', 3);
+INSERT INTO SyllaPro_subject VALUES ('623801', '컴퓨터네트워크', '홍진근', '수1,2', 3);
+INSERT INTO SyllaPro_subject VALUES ('770859', '사람다운 사람의 길', '성백걸', '수3', 1);
+INSERT INTO SyllaPro_subject VALUES ('860102', '빅데이터와 세상 읽기', '김정환', '수4,5,6', 2);
+INSERT INTO SyllaPro_subject VALUES ('239309', '대학예배', '소강당', '목3', 1);
+INSERT INTO SyllaPro_subject VALUES ('335501', '기독교세계관', '팀티칭', '금1', 1);
+
+
+
+
+
+
+
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

@@ -40,17 +40,15 @@
         <ul class="navbar-nav ml-auto">
 
 
-                	<%
-			String name = (String) session.getAttribute("NAME") ;
-		%>
+          {% if user.is_authenticated %}
+          <a class="nav-link" href="login">{{ user_id }} (admin)</a>
+          {% else %}
+          <a class="nav-link" href="index"></a>
+          {% endif %}
 
 
         </ul>
     </div>
-
-
-
-
 
 
   </div>
