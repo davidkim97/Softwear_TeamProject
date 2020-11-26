@@ -4,7 +4,9 @@ from django.contrib.auth import authenticate, login
 from django.shortcuts import redirect
 from .models import Subject
 
+
 # Create your views here.
+
 
 def login_view(request):
     if request.method == "POST":
@@ -27,8 +29,8 @@ def timetable_view(request):
 def basket_view(request):
     basketdata = Subject.objects.all()
     context = {'basketdata':basketdata}
-    return render(request, "main3.html", context)
 
+    return render(request, "main3.html", context, {'basketdata':basketdata})
 
 
 

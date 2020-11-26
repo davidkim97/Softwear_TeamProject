@@ -13,20 +13,20 @@
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link rel="stylesheet" href="{% static '/bootstrap-4.5.3-dist/css/bootstrap.css' %}">
-	
+
 <title> 수강신청 </title>
      <div id="header">
-	<div class="logo">
-	<img src="{% static '백석.jpg' %}"/></a>
+   <div class="logo">
+   <img src="{% static '백석.jpg' %}"/></a>
 </div>
 <style type="text/css">
 #header {
 
-	height: 120px;
+   height: 120px;
 }
 #header .logo {
 
-	padding-top: 0px;
+   padding-top: 0px;
 }
 #header .logo a {}
 #header .logo a img {}
@@ -41,63 +41,87 @@ ho
 
 
  </nav>
-  
+
+<ul class="row">
+<h2>과목검색</h2>
+</ul>
+
 <div class="divSearch">
+<ul class="row">
 <form name="frmSearch" method="post" action="pdList.jsp">
-	<select name="condition">
-		<option value="pdName" >과목명</option>
-		<option value="price">교수님명</option>
-	</select>
-	<input type="text" name="keyword" title="검색어 입력">
-	<input type="submit" value="검색">
-	</form>
-</div>
+   <select name="condition">
+      <option value="pdName" >교과목명</option>
+
+   </select>
+   <input type="text" name="keyword" title="검색어 입력">
+   <input type="submit" value="검색">
+
+   </form>
+
+</ul>
 <table width="300"border="2"  style="position:fixed;left:50px; top:200px;">
-<br/><br/><br/><br/><br/>
-    
-<h2>과목정보</h2>
-	<table border="1" width="300">
-		<tr>
-			<td>과목코드</td>
-					
-		</tr>
-		<tr>
-			<td>과목명</td>
-					
-		</tr>
-		<tr>
-			<td>교수명</td>
-			
-		</tr>
-		<tr>
-			<td>시간</td>
-			
-		</tr>
-        <tr>
-			<td>학점</td>
 
-		</tr>
-	</table>
-
+<!-- 과목 검색, 교과목명, 과목번호 별 검색 가능 / 교과목명 pdName/ 과목번호 num / action pdList.jsp -->
 
 <br/>
- 
 
- 
+
+<ul class="row">
+<h2>과목정보</h2>
+</ul>
+<ul class="row">
+   <table border="1" width="100%">
+      <tr nowrap bgcolor="lightgrey"><p><font
+                         size="2" color=black>
+         <td>과목코드</td>
+         <td>과목명</td>
+         <td>교수명</td>
+         <td>시간</td>
+         <td>학점</td>
+         <td width="150"></br></td>
+
+      </tr>
+<tr>
+
+         <td><br/>
+   </td>
+         <td><br/>
+   </td>
+         <td> <br/>
+  </td>
+         <td><br/>
+   </td>
+         <td><br/>
+
+<td width="150"> <input type="submit" value="담기">
+  </td>
+
+      </tr>
+
+   </table>
+</ul>
+<!-- 과목정보 부분 / 가져올 DB가 아직 없어 임의로 빈칸으로 두었습니다. 담기버튼으로 장바구니에 추가 -->
+
+<br/>
+
+<ul class="row">
+ <h2>장바구니</h2>
+</ul>
+   <br/>
    <tr>
-        <td bgcolor="black"><table border="0" cellpadding="2" cellspacing="1"
+        <td bgcolor="black"><table border="5" cellpadding="1" cellspacing="1"
              width="100%">
                 <tr>
-                    <th align="center" nowrap bgcolor="#8EA2FF"><p><font
-                         size="2" color=white>과목코드</font></th>
-                    <th width="364" align="center" nowrap bgcolor="#8EA2FF"><p><font
-                         size="2" color=white>과목명</font></th>
-                    <th width="94" align="center" nowrap bgcolor="#8EA2FF"><p><font
-                         size="2" color=white>교수명</font></th>
-                    <th width="114" align="center" nowrap bgcolor="#8EA2FF"><p><font
-                         size="2" color=white>시간</font></th>
-                    <th align="center" nowrap bgcolor="#8EA2FF"><p><font
-                         size="2" color=white>학점</font></th>
+                    <th width="200" nowrap bgcolor="lightgrey"><p><font
+                         size="2" color=black>과목코드</font></th>
+                    <th width="360" align="center" nowrap bgcolor="lightgrey"><p><font
+                         size="2" color=black>과목명</font></th>
+                    <th width="94" align="center" nowrap bgcolor="lightgrey"><p><font
+                         size="2" color=black>교수명</font></th>
+                    <th width="114" align="center" nowrap bgcolor="lightgrey"><p><font
+                         size="2" color=black>시간</font></th>
+                    <th align="center" nowrap bgcolor="lightgrey"><p><font
+                         size="2" color=black>학점</font></th>
                 </tr>
             {% for Subject in basketdata %}
             <tr>
@@ -110,17 +134,9 @@ ho
             {% endfor %}
 
 
-		
-	</nav>
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
-	
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	
-</body>
 
+
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+   <script src="js/bootstrap.js"></script>
+
+</body>
