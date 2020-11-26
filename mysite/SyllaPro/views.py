@@ -1,6 +1,9 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from django.contrib.auth import authenticate, login
 from django.shortcuts import redirect
+from .models import Subject
+
 # Create your views here.
 
 def login_view(request):
@@ -20,6 +23,11 @@ def index_view(request):
 
 def timetable_view(request):
     return render(request, "timetable.html")
+
+def basket_view(request):
+    basketdata = Subject.objects.all()
+    context = {'basketdata':basketdata}
+    return render(request, "main3.html", context)
 
 
 
