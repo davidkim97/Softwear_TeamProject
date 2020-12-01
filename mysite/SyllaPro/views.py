@@ -3,10 +3,10 @@ from django.http import HttpResponse
 from django.contrib.auth import authenticate, login
 from django.shortcuts import redirect
 from .models import Subject
+from django.views.decorators.csrf import csrf_exempt
 
 
 # Create your views here.
-
 
 def login_view(request):
     if request.method == "POST":
@@ -31,6 +31,12 @@ def basket_view(request):
     context = {'basketdata':basketdata}
 
     return render(request, "main3.html", context, {'basketdata':basketdata})
+
+@csrf_exempt
+def upgrade_reply(request):
+    return
+
+
 
 
 

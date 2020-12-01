@@ -3,6 +3,7 @@ tr,
 td {
   border: 1px solid #c2c2c2;
   padding: 10px;
+  width: 30px;
 }
 
 .class_table {
@@ -16,6 +17,37 @@ td {
 }
 
 td:nth-child(1) {
-  width: 75px;
-  padding: 20px;
+  padding: 15px;
+}
+
+.mon1 {
+  background-color: #dceef2;
+}
+
+.mon2 {
+  background-color: #f2e8e8;
+}
+
+.tue1 {
+  background-color: #dee8f6;
+}
+
+.wen1 {
+  background-color: #dcf2e9;
+}
+
+.wen2 {
+  background-color: #fff8cc;
+}
+
+.wen3 {
+  background-color: #ffedda;
+}
+
+.thr1 {
+  background-color: #eff9cc;
+}
+
+.fri1 {
+  background-color: #ffe9e9;
 }

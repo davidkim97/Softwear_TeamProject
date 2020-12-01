@@ -48,7 +48,7 @@ ho
 
 <div class="divSearch">
 <ul class="row">
-<form name="frmSearch" method="post" action="pdList.jsp">
+<form name="frmSearch" method="post" action="basket">{% csrf_token %}
    <select name="condition">
       <option value="pdName" >교과목명</option>
 
